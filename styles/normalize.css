@@ -1,0 +1,43 @@
+/* <!-- 💕 به نام خداند روزی ده رهنمای 💕 -->
+ <!-- 💕 Thanks For Merciful God 💕 -->
+  <!-- 💕 كل ما أملكه يأتي من الله 💕 --> */
+html
+{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before
+{
+    box-sizing: inherit;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+li,ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+.flex
+{
+      display: flex;
+}
+.grid
+{
+    display: grid;
+}
+.clearfix::after
+{
+      content: '';
+      display: table;
+      clear: both;
+}

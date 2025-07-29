@@ -1,0 +1,677 @@
+/* <!-- 💕 به نام خداند روزی ده رهنمای 💕 -->
+ <!-- 💕 Thanks For Merciful God 💕 -->
+  <!-- 💕 كل ما أملكه يأتي من الله 💕 --> */
+
+@media (max-width:1400px) {
+    .container 
+    {
+        width: 137rem
+    }
+    .comments-content
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .message-arrow
+    {
+        display: none;
+    }
+    
+}
+@media (max-width:1200px) {
+    .container 
+    {
+        width: 114rem
+    }
+    .nav
+    {
+        padding: 3rem ;
+    }
+    .famous-courses__category 
+    {
+        font-size: 1.9rem;
+    }
+    .famous-courses__item
+    {
+        margin-left: 0rem;
+    }
+    .famous-courses__btn-container
+    {
+        top: 15rem;
+    }
+    .famous-courses-prev-btn,
+    .famous-courses-next-btn
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .course-teacher__info
+    {
+        font-size: 1.6rem;
+    }
+    .course-caption
+    {
+        font-size: 1.7rem;
+    }
+    .category-item svg
+    {
+        width: 14.4rem;
+        height: 13rem;
+    }
+    .courses__list-item
+    {
+        max-width: 29rem;
+    }
+}
+@media (max-width:992px) {
+    .container 
+    {
+        width: 96rem;
+    }
+    .nav svg
+    {
+        width: 2.5rem;
+    }
+    .nav-links 
+    {
+        font-size: 1.8rem;
+    }
+    .nav-links div
+    {
+        margin-left: 2.3rem;
+    }
+    .nav-settings svg
+    {
+        margin-right: 3rem;
+    }
+    #typing-text
+    {
+        font-size: 4rem;
+    }
+    .header-content__caption
+    {
+        font-size: 2.5rem;
+        margin: -2rem 0 -1rem 0;
+    }
+    .header-content__input
+    {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .search-icon
+    {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .header-details__item img
+    {
+        width:9.5rem;
+    }
+    .header-details__item h2
+    {
+        font-size: 4rem;
+    }
+    .header-details__item p
+    {
+        font-size: 2.3rem;
+    }
+    .main
+    {
+        margin-top: 5rem;
+    }
+    .famous-courses__category
+    {
+        margin-top: 2.5rem;
+    }
+    .famous-courses__btn-container
+    {
+        top: 3.5rem !important;
+    }
+    .category-road
+    {
+        margin-top: 12rem;
+    }
+    .course-caption
+    {
+        margin-bottom: 3rem;
+    }
+    .category-item svg
+    {
+        width: 14.4rem;
+        height: 13rem;
+    }
+    .main
+    {
+        margin-top: 12.5rem;
+    }
+    .courses-settings
+    {
+        font-size: 1.5rem;
+    }
+    .courses-settings__list-item
+    {
+        height: 6rem;
+        line-height: 6rem;
+    }
+    .courses__list-item
+    {
+        max-width: 31rem;
+    }
+}
+@media (max-width:768px) {
+
+    .container 
+    {
+        width: 72rem
+    }
+    .nav svg
+    {
+        width: 1.8rem;
+    }
+    .nav-links 
+    {
+        font-size: 1.45rem;
+    }
+    .nav-links div
+    {
+        margin-left: 1.6rem;
+    }
+    .nav-settings svg
+    {
+        margin-right: 2.1rem;
+    }
+    #typing-text
+    {
+        font-size: 3rem;
+    }
+    .header-content__caption
+    {
+        font-size: 1.8rem;
+        margin: -3rem 0 -2rem 0;
+    }
+    .header-content__input
+    {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+    }
+    .search-icon
+    {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .header-details__item img
+    {
+        width:7.5rem;
+    }
+    .header-details__item h2
+    {
+        font-size: 3rem;
+    }
+    .header-details__item p
+    {
+        font-size: 2rem;
+    }
+    .nav
+    {
+        padding: 2rem 3rem;
+    }
+    .header-content
+    {
+        padding-top: 10rem;
+    }
+    .famous-courses__btn-container
+    {
+        display: none;
+    }
+    .famous-courses__category
+    {
+        font-size: 1.5rem;
+    }
+    .famous-courses__item
+    {
+        padding:0 1rem;
+        height: 5rem;
+    }
+    .famous-courses__title svg
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+    .famous-courses__title
+    {
+        font-size: 2.5rem !important;
+    }
+    .course-concept__list-item-content
+    {
+        font-size: 1.2rem;
+    }
+    .course-concept__list-item-video
+    {
+        font-size: 1.1rem;
+    }
+    .dott-symbol
+    {
+        margin: -1.25rem 0.25rem 0 0.25rem;
+    }
+    .course-concept__list-item-video svg
+    {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .category-item svg
+    {
+        width: 12.8rem;
+        height: 12rem;
+    }
+    .category-item h3
+    {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .main
+    {
+        margin-top: 8rem;
+    }
+    .courses
+    {
+        margin-top: 2.5rem;
+    }
+    .courses-settings
+    {
+        font-size: 1.3rem;
+    }
+    .courses-settings__list
+    {
+        overflow: scroll;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .course-content__title,.category-number
+    {
+        font-size: 2rem !important;
+    }
+    .article__btn-container
+    {
+        display: none;
+    }
+    .discount-courses__title
+    {
+        font-size: 3rem;
+    }
+}
+@media (max-width:576px) {
+    .container 
+    {
+        width: 54rem
+    }
+    .nav-links 
+    {
+        display: none;
+    }
+    .nav-settings
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hamburger-menu
+    {
+        display: block;
+    }
+    .nav-settings svg
+    {
+        width: 2.5rem;
+        margin: auto !important;
+    }
+    .page-mode
+    {
+        display: none;
+    }
+    .famous-courses__list-item
+    {
+        text-align: center;
+    }
+    .famous-courses__master
+    {
+        flex-direction: column ;
+        align-items: center;
+    }
+    .famous-courses__category
+    {
+        font-size: 1.2rem;
+        justify-content: space-between;
+    }
+    .famous-courses__item
+    {
+        padding:0 .6rem;
+    }
+    .famous-courses__student-numbers
+    {
+        margin-right: -1.5rem;
+        margin-left: 0.75rem;
+    }
+    .course-video-details__list
+    {
+        grid-template-columns: repeat(2 , minmax(13rem , 1fr));
+    }
+    .course-video-details__item svg
+    {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .course-video-details__item-info h3
+    {
+        font-size: 1.3rem;
+    }
+    .course-prerequisites
+    {
+        font-size: 1.1rem;
+    }
+    .category-road 
+    {
+        scrollbar-width: none;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+    .course-concept
+    {
+        padding: 2rem;
+    }
+    .course-concept__list-item-content
+    {
+        font-size: 1.4rem;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+    }
+    .course-concept__list-item-video
+    {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    .course-concept__list-item-video svg
+    {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .course-concept-arrow-icon
+    {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .course-concept__list-item__concept,
+    .dott-symbol,.course-concept__list-item__time
+    {
+        display: none;
+    }
+    .course-video-details__item
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .category-title
+    {
+        margin-top: -3.5rem;
+    }
+    .category-title h2
+    {
+        font-size: 2.5rem;
+    }
+    .category-item svg
+    {
+        width: 10.6rem;
+        height: 10.5rem;
+    }
+    .category-item h3
+    {
+        font-size: 1.3rem;
+    }
+    .discount-courses__content
+    {
+        text-align: center;
+    }
+    .discount-courses__master
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .discount-courses__buy-details
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .discount-courses__title h2
+    {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:490px) {
+    .container 
+    {
+        width: 100%
+    }
+    #typing-text
+    {
+        font-size: 1.7rem;
+    }
+    .header-content__caption
+    {
+        font-size: 1.2rem;
+        margin: -4.8rem 0 -3.3rem 0;
+    }
+    .header-content__input
+    {
+        font-size: 1.2rem;
+        padding: 1.3rem;
+    }
+    .search-icon
+    {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0.7rem;
+        left: 1rem;
+    }
+    .header-content
+    {
+        padding-top: 5rem;
+    }
+    .header-details img
+    {
+        width: 5rem;
+    }
+    .header-details h2
+    {
+        font-size: 1.8rem;
+    }
+    .header-details p
+    {
+        font-size: 1.2rem;
+    }
+    .famous-courses__master
+    {
+        flex-direction: row ;
+    }
+    .famous-courses__caption
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .famous-courses__category
+    {
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .famous-courses__item
+    {
+        margin: 1rem;
+        height: auto;
+        border: none;
+    }
+    .famous-courses__student-numbers
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .famous-courses__title
+    {
+        font-size: 2rem !important;
+    }
+    .famous-courses__title svg
+    {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .course-buy
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .timeDisplay
+    {
+        margin:  0 1rem 0 0;
+    }
+    #progress-container
+    {
+        width: 100%;
+    }
+    #timeDisplay
+    {
+        min-width: 8rem;
+    }
+    #stopBtn
+    {
+        display: none !important;
+    }
+    .course-participate__number div,
+    .course-participate__score
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .course-participate__number div
+    {
+        width: 100%; 
+    }
+    .course-participate__number-container,.course-participate__score-container
+    {
+        margin: 0;
+    }
+    .course-concept__list-item-content
+    {
+        font-size: 1.2rem;
+    }
+    .course-video-details__item-info h3
+    {
+        font-size: 1.1rem;
+    }
+    .course-video-details__item-info p
+    {
+        font-size: 1rem;
+    }
+    .course-video-details__item
+    {
+        padding: 1rem;
+    }
+    .course-video-details__list
+    {
+        gap: 1rem;
+    }
+    .course-vdeo__title
+    {
+        margin-left: 0.3rem;
+    }
+    .category-item svg
+    {
+        width: 9rem;
+        height: 9.5rem;
+        margin: 0.5rem;
+    }
+    .category-item h3
+    {
+        font-size: 1.2rem;
+    }
+    .category-title h2
+    {
+        font-size: 2rem;
+    }
+    .category-title svg
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .course-content__title,.category-number
+    {
+        font-size: 1.5rem !important;
+    }
+    .course-content__title
+    {
+        margin-left: 1rem;
+    }
+    .courses__content
+    {
+        width: 30rem;
+    }
+    .course-notfind__icon
+    {
+        margin: -7rem 0 3rem 0;
+    }
+    .course-notfind__title
+    {
+        font-size: 2.3rem;
+        bottom: -6rem;
+        text-align: center;
+    }
+    .famous-courses__caption,.courses__caption
+    {
+        margin-bottom: 1.5rem;
+    }
+    .main
+    {
+        margin-top: 3rem;
+    }
+    .course-content
+    {
+        flex-wrap: wrap;
+    }
+    .course-title
+    {
+        text-align: center;
+    }
+    .articles__title h2
+    {
+        font-size: 2rem;
+    }
+    
+    .articles__title svg
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .discount-courses__caption p
+    {
+        margin: auto;
+    }
+    .discount-courses__buy-details
+    {
+        flex-direction: row;
+    }
+    .discount-courses__master
+    {
+        flex-direction: row;
+    }
+    
+    .discount-courses__title h2
+    {
+        font-size: 2rem;
+    }
+    .discount-courses__title svg
+    {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+}

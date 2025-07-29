@@ -1,0 +1,305 @@
+/* <!-- 💕 به نام خداند روزی ده رهنمای 💕 -->
+<!-- 💕 Thanks For Merciful God 💕 -->
+<!-- 💕 كل ما أملكه يأتي من الله 💕 -->  */
+:root
+{
+    --font-vazir-black : "Vazir-Black";
+    --font-vazir-bold : "Vazir-Bold";
+    --font-vazir-regular : "Vazir-Regular";
+    --font-vazir-light : "Vazir-Light";
+    --font-vazir-medium : "Vazir-Medium";
+    --main-color:#7B4BFA;
+    --primary-color: rgb(17 24 39 / 1);
+    --secondary-color: rgb(55 65 81 / 1);
+    --tertiary-color:rgb(100 116 139 / 1);
+    --app-bg:#F3F4F6;
+    --section-bg:#FFFFFF;
+    --course-section-bg: #F3F4F6;
+    --white-color:#ffffff;
+}
+.dark-mode
+{
+    --app-bg:#111827;
+    --section-bg:#242A38;
+    --primary-color: rgb(255 255 255 / 1);
+    --secondary-color: rgb(156 163 175 / 1);
+    --tertiary-color:rgb(100 116 139 / 1);
+}
+.nav
+{
+    background-color: var(--section-bg);
+    padding: 3.8rem 10rem;
+    font-size: 2rem;
+    position: absolute;
+}
+.nav a
+{
+    color: var(--primary-color) !important;
+}
+.nav path
+{
+    stroke: var(--primary-color);
+    fill: var(--primary-color)
+}
+.hamburger-menu,
+.hamburger-menu-line::after,
+.hamburger-menu-line::before
+{
+    background-color: var(--primary-color);
+}
+.hamburger-menu--toggle
+{
+    background-color: transparent !important;
+}
+.main
+{
+    margin-top: 12rem;
+}
+.course-content
+{
+    align-items: center;
+    justify-content: space-between;
+}
+.course-content div
+{
+    align-items: center;
+}
+.course-content h1
+{
+    font-size: 3rem;
+    font-family: var(--font-vazir-bold);
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+.category-number
+{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-family: var(--font-vazir-bold);
+}
+.article-road
+{
+    background-color: var(--section-bg);
+}
+/* ARTICLE ROAD  */
+.main
+{
+    margin-top: 12.5rem;
+}
+.article-road
+{
+    background-color: var(--section-bg);
+    padding: 2rem;
+    align-items: center;
+    gap: 0 5rem;
+    font-family: var(--font-vazir-medium);
+    color: var(--primary-color);
+    border-radius: 2rem;
+}
+.home-icon,
+.article-road__course,
+.article-road__title,
+.article-road__course-name
+{
+    position: relative;
+    padding-left: 0.5rem;
+}
+.home-icon svg path
+{
+    fill:  var(--primary-color);
+}
+.article-road__course-name
+{
+    font-weight: bold;
+}        
+.arrow-icon
+{
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.arrow-icon rect
+{
+    fill: none;
+}
+.arrow-icon path
+{
+    stroke: #FFFF;
+}
+.article-road__course-name svg
+{
+    display: none;
+}
+/* ARTICLE MAIN CONTENT (RIGHT SIDE) */
+.article-content
+{
+    margin-top: 4rem;
+}
+.article-content__right-side
+{
+    background-color: var(--section-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+.article-content__img
+{
+    border-radius: 1.5rem;
+    width: 100%;
+}
+.article-title
+{
+    font-family: var(--font-vazir-black);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 2rem 0 0rem 0;
+}
+.article-content-text
+{
+    color: var(--secondary-color);
+    font-family: var(--font-vazir-regular);
+    font-size: 1.75rem;
+    text-align: justify;
+    margin: 3rem 1.5rem;
+    border-right: .3rem double var(--primary-color);
+    padding-right: 1.5rem;
+}
+.article-category
+{
+    color: var(--primary-color);
+    font-family: var(--font-vazir-medium);
+    margin: 4rem 0 5rem 0;
+    border-radius: 1.5rem;
+    border: .1rem solid var(--primary-color);
+    flex-direction: column;
+}
+.article-category__title,.article-category__title-content
+{
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: .1rem solid var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.article-category__title-content
+{
+    padding: 1rem 2.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.article-category__title-content p
+{
+    margin-right: .5rem;
+}
+.article-category-item a
+{
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.article-category-item a:hover
+{
+    color: var(--main-color);
+}
+.article-category-item
+{
+    margin: 2rem 0;
+}
+.article-category__title span
+{
+    margin-right: 1.5rem;
+    font-family: var(--font-vazir-bold);
+    font-size: 1.75rem;
+}
+.article-author-info
+{
+    background-color: var(--section-bg);
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    height: 35rem;
+}
+.author-img
+{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.author-name
+{
+    font-size: 2rem;
+    font-family: var(--font-vazir-black);
+    color: var(--primary-color);
+}
+.author-caption
+{
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--font-vazir-medium);
+}
+.see-author-profile
+{
+    color: var(--main-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 0.1rem solid var(--main-color);
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    font-family: var(--font-vazir-medium);
+}
+.see-author-profile:hover
+{
+    background-color: rgba(123 75 250 / .1);
+}
+.article-info
+{
+    background-color: var(--section-bg);
+    padding: 2.5rem;
+    color: rgb(59 130 246 / 1);
+    flex-direction: column;
+}
+.article-date,.article-study-time
+{
+    background-color: rgb(243 247 254 / 1);
+    padding: 1.5rem 4rem;
+    border-radius: 1rem;
+    align-items: center; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex-direction: column;
+}
+.dark-mode .article-date , .dark-mode .article-study-time
+{
+    background-color: var(--app-bg);
+}
+.article-study-time
+{
+    margin: 1rem ;
+}
+.article-date__text ,.article-stydu-time-label
+{
+    margin-left: .75rem;
+    margin-top: .5rem;
+}
+.article-study-time:hover,.article-date:hover
+{
+    background-color: #3B82F6;
+    color: var(--white-color);
+}
+.article-date:hover path,.article-study-time:hover path
+{
+    stroke:var(--white-color);
+    fill:var(--white-color)
+}
+.article-category__title-content--active
+{
+    display: none;
+}
+.see-more-category
+{
+    cursor: pointer;
+}
