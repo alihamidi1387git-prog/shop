@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shoppingcard.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav flex">
+            <div class="nav-links flex">
+                <div><a href="#">دوره های آموزشی</a></div>
+                <div><a href="#">همه دوره ها</a></div>
+                <div><a href="#">پرفروش ترین ها</a></div>
+                <div><a href="#">مقالات</a></div>
+            </div>
+            <div class="nav-settings flex">
+              <div class="page-mode">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <svg fill="#fff" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                 viewBox="0 0 49.739 49.739" xml:space="preserve">
+                  <path stroke="#fff" stroke-width="2.5px" d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+                c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+                c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+                C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+                c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+                  c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"/>
+                  </svg>
+              </div>
+                <a href="#">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg fill="#fff" height="35px" width="35px" version="1.1" id="XMLID_268_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                     viewBox="0 0 24 24" xml:space="preserve">
+                <g id="shop-basket">
+                    <g>
+                        <path d="M20.9,24H3.1l-1-11H0V7h4.5l4.7-7l1.7,1.1L7,6.9h10.2l-3.9-5.8L15,0l4.7,7H24v6h-2.1L20.9,24z M13,22h6.1l0.8-9H4.1l0.8,9
+                            H13z M2,11h20V9H2V11z"/>
+                    </g>
+                </g>
+                </svg>
+                </a>
+                <a href="#">
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="35px" height="35px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#fff" stroke-width="1px" fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 1.25C9.37678 1.25 7.25013 3.37665 7.25013 6C7.25013 8.62335 9.37678 10.75 12.0001 10.75C14.6235 10.75 16.7501 8.62335 16.7501 6C16.7501 3.37665 14.6235 1.25 12.0001 1.25ZM8.75013 6C8.75013 4.20507 10.2052 2.75 12.0001 2.75C13.7951 2.75 15.2501 4.20507 15.2501 6C15.2501 7.79493 13.7951 9.25 12.0001 9.25C10.2052 9.25 8.75013 7.79493 8.75013 6Z" fill="#1C274C"/>
+                <path stroke="#fff" stroke-width="1px" fill="#fff" fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 12.25C9.68658 12.25 7.55506 12.7759 5.97558 13.6643C4.41962 14.5396 3.25013 15.8661 3.25013 17.5L3.25007 17.602C3.24894 18.7638 3.24752 20.222 4.52655 21.2635C5.15602 21.7761 6.03661 22.1406 7.22634 22.3815C8.4194 22.6229 9.97436 22.75 12.0001 22.75C14.0259 22.75 15.5809 22.6229 16.7739 22.3815C17.9637 22.1406 18.8443 21.7761 19.4737 21.2635C20.7527 20.222 20.7513 18.7638 20.7502 17.602L20.7501 17.5C20.7501 15.8661 19.5807 14.5396 18.0247 13.6643C16.4452 12.7759 14.3137 12.25 12.0001 12.25ZM4.75013 17.5C4.75013 16.6487 5.37151 15.7251 6.71098 14.9717C8.02693 14.2315 9.89541 13.75 12.0001 13.75C14.1049 13.75 15.9733 14.2315 17.2893 14.9717C18.6288 15.7251 19.2501 16.6487 19.2501 17.5C19.2501 18.8078 19.2098 19.544 18.5265 20.1004C18.156 20.4022 17.5366 20.6967 16.4763 20.9113C15.4194 21.1252 13.9744 21.25 12.0001 21.25C10.0259 21.25 8.58087 21.1252 7.52393 20.9113C6.46366 20.6967 5.84425 20.4022 5.47372 20.1004C4.79045 19.544 4.75013 18.8078 4.75013 17.5Z" fill="#1C274C"/>
+                </svg>
+                </a>
+              
+                <div class="hamburger-menu">
+                    <div class="hamburger-menu-line"></div>
+                </div>
+        </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="mobile-fast-links">
+                <h3 class="mobile-fast-links__title">دسترسی سریع</h3>
+                <div class="mobile-fast-links__list">
+                    <div class="mobile-fast-links__item"><a href="#">دوره های آموزشی</a></div>
+                    <div class="mobile-fast-links__item"><a href="#">همه دوره ها</a></div>
+                    <div class="mobile-fast-links__item"><a href="#">پرفروش ترین ها</a></div>
+                    <div class="mobile-fast-links__item"><a href="#">مقالات</a></div>
+                </div>
+            </div>
+            <hr>
+            <div class="mobile-category">
+                <h3 class="mobile-category__title">دسته بندی ها</h3>
+                <div class="mobile-category__list">
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                      <p>فرانت اند</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="15">جاوا اسکریپت</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="18">طراحی قالب</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="4">دوره leaft.js</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="26">دوره webpack</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="28">دوره redux</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="1">دوره three.js</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="31">دوره pwa</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="9">دوره tailwind</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="30">دوره css grid</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="29">دوره canvas</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">  
+                  <p>بک اند</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="3">دوره django</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="25">دوره node js</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="23">دوره fastify</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="17">دوره لایو وایر مستر</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="12">ربات تلگرام با php</a></li>
+                          
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>هوش مصنوعی</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="0">به زودی اظافه میشود ...</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>مهارت های نرم</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="19">تکنیک های قیمت گ‌ذاری</li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="5">قرار داد نویسی</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="10">تجربیات کار تیمی</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="22">مستر فریلنس</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>سیستم عامل</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="11">دوره لینوکس</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>هک و امنیت</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="2">جاوا اسکریپت سیاه</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="14">پایتون سیاه</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>پایتون</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="16">پروژه های پایتون</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="13">بهیه نویسی کد پایتون</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="6">Data Visualization با پایتون</a></li>
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="21">دوره متخصص پایتون</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="mobile-category__item flex">
+                  <div class="flex">
+                    <p>سخت افزار</p>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M18 12L6 12M6 12L11 17M6 12L11 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mobile-category__submenu">
+                      <ul class="mobile-category__submenu-list">
+                          <li class="mobile-category__submenu-item"><a href="#" data-id="0">بزودی اظافه میشود ...</a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <hr>      
+            <div class="mobile-page-mode flex">
+                <?xml version="1.0" encoding="iso-8859-1"?><svg fill="#000" height="25px" width="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 49.739 49.739" xml:space="preserve"><path stroke="#000" stroke-width="1px" d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"/></svg>
+                <p>مود تاریک</p>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="shoppingcard-product">
+              <div class="shoppingcard-product__title flex">
+                  <svg fill="#fff" stroke="#fff" stroke-width="15px" height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 512 512" xml:space="preserve">
+             <g>
+               <g>
+                 <path d="M264.699,226.358h-17.397c-11.547,0-20.943,9.395-20.943,20.943v168.302c0,11.549,9.395,20.943,20.943,20.943H264.7
+                   c11.547,0,20.943-9.395,20.943-20.943V247.301C285.642,235.753,276.247,226.358,264.699,226.358z M269.475,415.604h-0.001
+                   c0,2.632-2.142,4.775-4.775,4.775h-17.397c-2.632,0-4.775-2.142-4.775-4.775V247.301c0-2.632,2.142-4.775,4.775-4.775H264.7
+                   c2.632,0,4.775,2.142,4.775,4.775V415.604z"/>
+               </g>
+             </g>
+             <g>
+               <g>
+                 <path d="M383.268,226.358H365.87c-11.549,0-20.943,9.395-20.943,20.943v168.302c0,11.549,9.395,20.943,20.943,20.943h17.398
+                   c11.548,0,20.943-9.395,20.943-20.943V247.301C404.212,235.753,394.817,226.358,383.268,226.358z M388.042,415.604
+                   c0,2.632-2.142,4.775-4.775,4.775H365.87c-2.632,0-4.775-2.142-4.775-4.775V247.301c0-2.632,2.142-4.775,4.775-4.775h17.398
+                   c2.632,0,4.774,2.142,4.774,4.775V415.604z"/>
+               </g>
+             </g>
+             <g>
+               <g>
+                 <path d="M146.13,226.358h-17.397c-11.547,0-20.943,9.395-20.943,20.943v168.302c0,11.549,9.395,20.943,20.943,20.943h17.398
+                   c11.547,0,20.943-9.395,20.943-20.943V247.301C167.074,235.753,157.679,226.358,146.13,226.358z M150.906,415.604h-0.001
+                   c0,2.632-2.142,4.775-4.775,4.775h-17.397c-2.632,0-4.775-2.142-4.775-4.775V247.301c0-2.632,2.142-4.775,4.775-4.775h17.398
+                   c2.632,0,4.775,2.142,4.775,4.775V415.604z"/>
+               </g>
+             </g>
+             <g>
+               <g>
+                 <path d="M489.664,129.347H350.316v-13.474c0-52.006-42.31-94.316-94.316-94.316s-94.316,42.31-94.316,94.316v13.474H22.336
+                   C10.02,129.347,0,139.368,0,151.684v16.179c0,17.395,14.153,31.548,31.549,31.548h0.788v228.771
+                   c0,34.331,27.929,62.26,62.259,62.26h322.808c34.33,0,62.259-27.929,62.259-62.26V199.411h0.788
+                   c17.396,0,31.549-14.153,31.549-31.549v-16.179C512,139.368,501.98,129.347,489.664,129.347z M177.853,115.874
+                   c0-43.091,35.056-78.147,78.147-78.147s78.147,35.056,78.147,78.147v13.474H307.2v-13.474c0-28.231-22.969-51.2-51.2-51.2
+                   s-51.2,22.969-51.2,51.2v13.474h-26.947V115.874z M291.032,115.874v13.474h-70.063v-13.474c0-19.317,15.716-35.032,35.032-35.032
+                   S291.032,96.557,291.032,115.874z M495.832,167.862c0,8.494-6.886,15.38-15.38,15.38h-99.527c-4.465,0-8.084,3.62-8.084,8.084
+                   c0,4.465,3.62,8.084,8.084,8.084h82.571v228.771c0,25.456-20.636,46.092-46.092,46.092H94.596
+                   c-25.456,0-46.091-20.636-46.091-46.091V199.411H345.28c4.465,0,8.084-3.62,8.084-8.084c0-4.465-3.62-8.084-8.084-8.084H31.549
+                   c-8.495,0-15.38-6.887-15.38-15.38v-16.178c0-3.406,2.762-6.168,6.168-6.168h467.328c3.406,0,6.168,2.762,6.168,6.168V167.862z"/>
+               </g>
+             </g>
+                  </svg>
+                  <h2>سبد خرید</h2>
+              </div>
+              <ul class="shoppingcard-product__list">
+              </ul>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="scripts/shoppingcard.js"></script>
+</body>
+</html>
