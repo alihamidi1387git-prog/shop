@@ -52,7 +52,7 @@
 }
 .main
 {
-    margin: 17rem 0 5rem 0;
+    margin-top: 17rem;
 }
 .category-road
 {
@@ -142,7 +142,6 @@
     border-radius: 1rem;
     transition: all 0.3s ease;
     margin-bottom: 1rem;
-    cursor: pointer;
 }
 .course-buy__btn:hover
 {
@@ -157,7 +156,6 @@
     font-size: 3rem;
     font-family: var(--font-vazir-bold);
     margin-left: 0.75rem;
-    color: var(--primary-color);
 }
 .toman-icon
 {
@@ -435,7 +433,6 @@
     justify-content: space-between;
     margin: 3rem 0 1rem 0;
     font-size: 1.9rem;
-    color: var(--primary-color) !important;
 }
 .course-complete__process-bar
 {
@@ -672,14 +669,4 @@
 .course-concept-item--active
 {
     height: auto;
-}
-.addtocard-message
-{
-    position: fixed;
-    top: 13rem;
-    left: 5rem;
-    background-color: var(--section-bg);
-    padding: 2.5rem;
-    z-index: 100;
-    display: none !important;
 }

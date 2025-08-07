@@ -42,6 +42,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/header-bg2.jpg');
+    /* max-width:100%; */
     max-width: 190rem;
     margin:0 auto ;
     height:auto;
@@ -59,12 +60,13 @@ body
     align-items: center;
     font-size: 2.3rem;
     position: fixed;
-    right: 0;
     left: 0;
-    margin:0 auto;
+    right: 0;
+    margin: 0 auto;
     top: 0;
     font-family: var(--font-vazir-medium);
     padding: 5rem 15rem;
+    /* background: rgba(255, 255, 255, 0.15); */
     background: rgba(0, 0, 0 , .3);
     backdrop-filter: blur(2rem);
     -webkit-backdrop-filter: blur(2rem);
@@ -599,7 +601,7 @@ body
 .softskill-icon path,
 .photoshop-icon rect,
 .photoshop-icon path,
-
+.xd-icon path,
 .ai-icon path,
 .game-icon path,
 .network-icon path,
@@ -607,19 +609,6 @@ body
 {
     stroke: var(--primary-color);
     transition: all 0.3s ease;
-}
-.xd-icon .st1
-{
-    transition: all 0.3s ease;
-    fill:var(--white-color)
-}
-.dark-mode .xd-icon .st0
-{
-    fill:var(--white-color)
-}
-.dark-mode .xd-icon .st1
-{
-    fill:#000
 }
 .backend-icon path,
 .python-icon path,
@@ -985,10 +974,6 @@ body
     cursor: pointer;
     align-items: center;
 }
-.article-see a
-{
-    align-items: center;
-}
 .article-see p
 {
     color: var(--primary-color);
@@ -1143,21 +1128,17 @@ body
 {
     background-color: var(--section-bg);
     padding: 5rem 2.5rem;
-    max-width: 190rem;
-    margin: auto;
 }
 .relation-port
 {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 2.75rem;
-    flex-wrap: wrap;
 }
 .social-address
 {
     justify-content: space-between;
     width: 38rem;
-    margin: 0 0 1rem 3rem;
 }
 .telegram-address
 {
@@ -1166,10 +1147,6 @@ body
 .email-address
 {
     align-items: center;
-}
-.email-address .st0,.telegram-address svg
-{
-    fill: var(--primary-color);
 }
 .telegram-address p , .email-address p
 {
@@ -1184,14 +1161,9 @@ body
     width: 11rem;
     justify-content: space-between;
 }
-.instagram-icon,.whatsapp-icon path
+.instagram-icon,.whatsapp-icon path,.telegram-icon path
 {
     transition: all 0.3s ease;
-    fill:  var(--primary-color);
-}
-.telegram-icon path
-{
-    stroke:  var(--primary-color);
 }
 .instagram-icon:hover
 {
@@ -1207,19 +1179,18 @@ body
 }
 .footer-content
 {
-    margin-top: 4rem;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-.footer-content__info h2 ,.footer-courses-links,.footer-side-links h2
+.footer-content__info
+{
+    padding: 2.75rem 0;
+}
+.footer-content__info h2 ,.footer-courses-links
 {
     font-family: var(--font-vazir-black);
     color: var(--primary-color);
     font-size: 2rem;
-}
-.footer-content__info 
-{
-    margin-left: 1rem;
 }
 .footer-content__info p
 {
@@ -1229,36 +1200,8 @@ body
     text-align: justify;
     margin-top: 1.25rem;
 }
-.footer-courses-links__list,.footer-side-links__list
-{
-    margin-top: 1.25rem;
-}
-.footer-courses-links__list li,.footer-side-links__list li
-{
-    margin: .75rem 0;
-    font-size: 1.6rem;
-}
-.footer-courses-links__list a ,.footer-side-links__list a
+.footer-courses-links__list a
 {   
     font-family: var(--font-vazir-regular);
-    color: var(--secondary-color);
-}
-.trust-icon
-{
-    width: 14rem;
-    cursor: pointer;
-    height: 14rem;
-    align-self: center;
-    background-color: var(--app-bg);
-    padding: 2.5rem;
-    border-radius: 1.5rem;
-    margin: 0 .75rem;
-}
-.copy-right
-{
-    margin-top: 5rem;
-    align-items: center;
-    justify-content: space-between;
-    font-family: var(--font-vazir-regular);
-    color: var(--primary-color);
+    margin: 1rem 0;
 }
