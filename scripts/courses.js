@@ -1,7 +1,7 @@
 // /* <!-- 💕 به نام خداند روزی ده رهنمای 💕 -->
 // <!-- 💕 Thanks For Merciful God 💕 -->
 // <!-- 💕 كل ما أملكه يأتي من الله 💕 --> */
-import {changeMode , modeHandler , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon} from './funcs.js'
+import {changeMode , modeHandler , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon } from './funcs.js'
 const menuToggleBtn = document.querySelector(".hamburger-menu")
 const mobileMenu = document.querySelector(".mobile-menu")
 const courseImg = document.querySelector(".course-details__img img")
@@ -26,7 +26,8 @@ const courseMainCaption = document.querySelector(".course-main-caption")
 const courseConceptList = document.querySelector(".course-concept__list")
 const mobileCategoryItem = document.querySelectorAll(".mobile-category__item")
 const mobileCategorySubmenuItem = document.querySelectorAll(".mobile-category__submenu-item")
-
+const addToBasketCardBtn = document.querySelector(".course-buy__btn")
+const addtocardMessage = document.querySelector(".addtocard-message")
 menuToggleBtn.addEventListener("click" , function()
 {
     menuToggleBtn.classList.toggle("hamburger-menu--toggle")
@@ -79,14 +80,14 @@ let famousCoursesListItems = [
     {id:31 ,category:"front-end" , img:"images/frontend-course-6.webp" , title:"آموزش PWA بصورت پروژه محور" , caption:"کلمه PWA مخفف Progressive Web App بوده و یه تکنولوژی تقریبا جدیده که میتونیم بهمون اجازه میده وب‌سایتی که توسعه دادیم رو به شکل یه اپلیکیشن دربیاریم که روی اندروید، IOS، ویندوز، مک و ... قابل نصبه." , master:"علی حمیدی" , participants:"۲۴۲۹" , price:"۲,۳۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۵۱" , prerequisites:"علاقه به برنامه نویسی"},
     {id:32 ,category:"front-end" , img:"images/frontend-course-7.webp" , title:"آموزش FlexBox پروژه محور + پروژه سایت هاستینگ" , caption:"اگر شما به حوزه طراحی و برنامه نویسی وب علاقه داشته باشید قطعا در مورد صفحه آرایی، ریسپانسیو سازی، فلکس باکس و ... شنیده اید. در این دوره قصد داریم ماژول فلکس باکس را به صورت پروژه محور و از صفر تا صد به شما آموزش دهیم." , master:"احسان حمیدی" , participants:"۱۱۴۰۲" , price:"۳۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۹" , prerequisites:"علاقه به برنامه نویسی"},
     {id:33 ,category:"front-end" , img:"images/frontend-course-8.webp" , title:"کد نویسی سریع html css با Emmet" , caption:"داخل هر کدام از IDE و ادیتور ها ابزاری به اسم Emmet وجود دارد که در برنامه نویسی و توسعه وب، کمک بسیار زیادی به شما می کند. در این دوره با مفهوم و کاربرد Emmet آشنا شده و آن را به طور کامل از صفر تا صد یاد خواهید گرفت" , master:"سایه حمیدی" , participants:"۲۹۱۵" , price:"۱۵۰,۰۰۰" , status:"تکمیل شده" , duration:"۲۴" , prerequisites:"علاقه به برنامه نویسی"},
-    {id:34 ,category:"javascript" , img:"images/js-course-1.webp" , title:"توسعه افزونه مرورگر با جاوااسکریپت" , caption:"" , master:"رمضان حمیدی" , participants:"۱۴۳۲" , price:"۳,۹۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۱۹" , prerequisites:"HTML , CSS"},
+    {id:34 ,category:"javascript" , img:"images/js-course-1.webp" , title:"توسعه افزونه مرورگر با جاوااسکریپت" , caption:"ما در این دوره، توسعه افزونه های مرورگر رو با پیاده سازی پروژه های کاربردی با دانش فرانت اند مون از طریق زبان های HTML CSS JS یاد میگریم" , master:"رمضان حمیدی" , participants:"۱۴۳۲" , price:"۳,۹۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۱۹" , prerequisites:"HTML , CSS"},
     {id:35 ,category:"javascript" , img:"images/js-course-2.webp" , title:"توسعه کتابخانه با جاوااسکریپت" , caption:"توسعه کتابخانه، نمونه کاری قوی برای رزومه شما است و این دوره آموزشی یادگیری چنین مهارتی رو با نکات کاربردی و کد نویسی و همچنین ساخت مستندات جامع و پروژه عملی فراهم میکند" , master:"محسن احمدی" , participants:"۴۸۱۳" , price:"۳,۴۹۰,۰۰۰" , status:"تکمیل شده" , duration:"۲۴" , prerequisites:"HTML , CSS"},
     {id:36 ,category:"javascript" , img:"images/js-course-3.webp", title:"آموزش Next.js بصورت پروژه محور" , caption:"نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها برای توسعه دهنده های ری‌اکت به حساب میاد. نکست رو میشه مکمل ری‌اکت دونست. یعنی هر چی که ری‌اکت داره نکست هم داره" , master:"" , participants:"۵۴۰" , price:"۱,۲۹۰,۰۰۰" , status:"تکمیل شده" , duration:"۳۰" , prerequisites:"علاقه برنامه نویسی"},
     {id:37 ,category:"javascript" , img:"images/js-course-4.webp" , title:"پروژه های تخصصی با جاوا اسکریپت برای بازار کار" , caption:"هیچ فرقی نمیکنه شما با چه کتابخونه یا فریمورکی کار میکنین. تو این دوره یاد میگیری به عنوان یه برنامه نویس فرانت‌اند چطور یه پروژه بزرگ و واقعی رو منیج کنی. حالا این پروژه میتونه با ویو، ری‌اکت یا حتی جاوا اسکریپت خام باشه." , master:"سایه حمیدی" , participants:"۵۸۹" , price:"۲,۱۳۰,۰۰۰" , status:"تکمیل شده" , duration:"۵۳" , prerequisites:"HTML , CSS"},
     {id:38 ,category:"javascript" , img:"images/js-course-5.webp" , title:"آموزش کاربردی ESlint" , caption:"ESLint برای برنامه‌نویسان جاوااسکریپت طراحی شده تا با این ابزار، کدهایی بهینه و بدون خطا بنویسند. نحوه پیکربندی و استفاده از آن در پروژه‌های مختلف آموزش داده می‌شود." , master:"مرتضی راد" , participants:"۳۲۹" , price:"۹۵۰,۰۰۰" , status:"تکمیل شده" , duration:"۲۹" , prerequisites:"علاقه برنامه نویسی"},
     {id:39 ,category:"javascript" , img:"images/js-course-6.webp" , title:"آموزش 20 کتابخانه جاوااسکریپت برای بازار کار" , caption:"امروزه کتابخانه‌ها کد نویسی را خیلی آسان و لذت بخش تر کرده اند. به قدری که حتی امروزه هیچ شرکت برنامه نویسی پروژه های خود را با Vanilla Js پیاده سازی نمی کند و همیشه از کتابخانه ها و فریمورک های موجود استفاده می کند." , master:"علی حمیدی" , participants:"۱۹۳۴" , price:"۱,۳۵۰,۰۰۰" , status:"تکمیل شده" , duration:"۴۵" , prerequisites:"HTML , CSS"},
-    {id:40 ,category:"javascript" , img:"images/js-course-7.webp.webp" , title:"پروژه های خلاقانه با جاوااسکریپت" , caption:"ممکن است در خیلی از وب سایت ها و شبکه های مجازی پروژه هایی را دیده باشید که خیلی خیلی خوشگل و زیبا هستند و با خودتان بگویید “من کِی میتونم همچین چیزی پیاده سازی کنم؟” یا اصلا فکر کنید" , master:"سایه حمیدی" , participants:"۴۹۱۳" , price:"۸۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۱۶" , prerequisites:"علاقه برنامه نویسی"},
-    {id:41 ,category:"wordpress" , img:"images/js-course-8.webp" , title:"بررسی تخصصی سوالات مصاحبه‌ای JS" , caption:"تو این دوره انواع مصاحبه، سوالات پرتکرار هر نوع مصاحبه، نحوه آماده شدن برای مصاحبه و ... برای شما عزیزان آموزش داده میشه تا بعد از گذروندن این دوره کاملا آماده هر نوع مصاحبه در زمینه جاوا اسکریپت باشین " , master:"امیرحسین حمیدی" , participants:"۴۸۹" , price:"۸۵۰,۰۰۰" , status:"تکمیل شده" , duration:"۳۴" , prerequisites:"علاقه برنامه نویسی"},
+    {id:40 ,category:"javascript" , img:"images/js-course-7.webp" , title:"پروژه های خلاقانه با جاوااسکریپت" , caption:"ممکن است در خیلی از وب سایت ها و شبکه های مجازی پروژه هایی را دیده باشید که خیلی خیلی خوشگل و زیبا هستند و با خودتان بگویید “من کِی میتونم همچین چیزی پیاده سازی کنم؟” یا اصلا فکر کنید" , master:"سایه حمیدی" , participants:"۴۹۱۳" , price:"۸۰۰,۰۰۰" , status:"تکمیل شده" , duration:"۱۶" , prerequisites:"علاقه برنامه نویسی"},
+    {id:41 ,category:"wordpress" , img:"images/wordpress-course-1.webp" , title:"آموزش جامع توسعه وردپرس" , caption:"آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند" , master:"امیرحسین حمیدی" , participants:"۴۲۹" , price:"۱,۸۵۰,۰۰۰" , status:"تکمیل شده" , duration:"۴۴" , prerequisites:"علاقه برنامه نویسی"},
     {id:42 , img:"images/discount-course-img1.webp" , title:"آموزش HTML رایگان مقدماتی تا پیشرفته" , caption:"آموزش HTML، اولین قدم شروع طراحی وبسایت است. HTML یه زبان نشانه گذاری هست که با کمک اون میتونی تگ هایی بنویسی تا سایت رو روی اون تگ ها پیاده کنی. همونجوری که هیچ موجودی نمیتونه بدون اسکلت زندگی کنه،", master:"علی حمیدی" , participants:"۱۹۲۰۲" , oldPrice:"۲۰۰,۰۰۰" , price:"۵۰,۰۰۰" , discountValue:"۷۵%" ,status:"تکمیل شده" , duration:"۶۷" , prerequisites:"علاقه به برنامه نویسی"},
     {id:43 , img:"images/discount-course-img2.webp" , title:"آموزش Css رایگان مقدماتی تا پیشرفته" , caption:"حالا وقتشه که با دوره آموزش CSS به اسکلتی که با html ساختی پوست و گوشت بدی تا تبدیل به یه موجود زیبا بشه. توی دوره مقدماتی تا پیشرفته Css یاد میگیری چطوری به المانای خشک و بی جون HTML زیبایی ببخشی.", master:"سایه حمیدی" , participants:"۳۹۲۱" , oldPrice:"۳,۵۰۰,۰۰۰" , price:"۱۲۰,۰۰۰" , discountValue:"۶۰%" ,status:"تکمیل شده" , duration:"۹۰" , prerequisites:"علاقه به برنامه نویسی"},
     {id:44 , img:"images/discount-course-img3.webp" , title:"شروع فرانت اند وب + مثال های جامع و زنده" , caption:"اگه میخوای طراحی وب رو اصولی شروع کنی و با اصطلاحات  و مقدمات این حوزه آشنا نیستی ! پس جای درستی اومدی ! زود ثبت نام کن و وارد سکوی پرتاب شو", master:"امیرحسین حمیدی" , participants:"۳۸۳۱" , oldPrice:"۳۰۰,۰۰۰" , price:"۸۰,۰۰۰" , discountValue:"۵۵%" , status:"تکمیل شده" , duration:"۴۵" , prerequisites:"JS"},
@@ -252,3 +253,57 @@ mobileCategorySubmenuItem.forEach(item => {
       }      
   })
 })
+let db = null
+console.log(deciredCourse);
+
+addToBasketCardBtn.addEventListener("click" , e =>
+{
+    let basketProduct = {
+      id: deciredCourse.id,
+      category:deciredCourse.category,
+      img:deciredCourse.img,
+      title:deciredCourse.title,
+      caption:deciredCourse.caption,
+      master:deciredCourse.master,
+      oldPrice:deciredCourse.oldPrice,
+      newPrice:deciredCourse.price,
+      discountValue : deciredCourse.discountValue
+    }   
+    
+    let productDb = indexedDB.open("products" , 8)
+    productDb.addEventListener("success" , e =>
+        {
+            db = e.target.result
+            let lx = db.transaction("info" , "readwrite")
+            let request = lx.objectStore('info')
+            let addItem = request.add(basketProduct)
+            addItem.addEventListener("success" , e =>
+            {
+            setTimeout(function()
+            {
+              addtocardMessage.style.display = "block"
+            },2000)
+            }
+            )
+            getBasketProductData()
+        }
+        )  
+    productDb.addEventListener("upgradeneeded" , e =>
+        {
+          db = e.target.result
+          if(!db.objectStoreNames.contains("info"))
+          {
+            db.createObjectStore("info" , {
+              keyPath:'id'
+            })
+          }
+        }
+    )
+}
+)
+function getBasketProductData() 
+{
+  let lx = db.transaction("info" , "readonly")
+  let request = lx.objectStore("info")
+  let productData = request.getAll()
+}

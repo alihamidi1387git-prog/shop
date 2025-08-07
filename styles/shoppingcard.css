@@ -123,148 +123,77 @@
 {
     margin-top: 0.75rem;
 }
-/* COURSES */
-.courses
+.shoppingcard-product__title
 {
-    margin-top: 5rem;
-}
-.courses-settings
-{
-    background-color: var(--section-bg);
-    padding:0 3rem;
+    font-family: var(--font-vazir-black);
     align-items: center;
-    font-size: 1.8rem;
-    border-radius: 1.5rem;
-    color: var(--primary-color);
-    font-family:var(--font-vazir-medium) ;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 2rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    font-size: 2rem;
 }
-.courses-settings__list
+.shoppingcard-product__title h2
 {
-    margin-right: 2rem;
+    margin:0.5rem 1rem 0 0;
 }
-.courses-settings__list-item
+.shoppingcard-product__list-item
 {
-    margin-left: 2.75rem;
-    height: 8rem;
-    line-height: 8rem;
-    color: var(--secondary-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.courses-settings__list-item--active
-{
-    border-top: .2rem solid var(--main-color);
-    border-bottom: .2rem solid var(--main-color);
-}
-.courses__list-item
-{
-    border-radius: 1.5rem;
     background-color: var(--section-bg);
+    padding: 1.5rem 2.5rem;
+    align-items: center;
+    border-top: .1rem solid var(--primary-color);
+    align-items: center;
+    justify-content: space-between;
+}
+.course-img
+{
+    border-radius: 1rem;
+    width: 16rem;
+    height: 100%;
+}
+.course-details
+{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 2rem 2rem 0 0;
+    font-family: var(--font-vazir-medium);
+}
+.course-details p
+{   
+    margin-top: .5rem;
+    color: var(--secondary-color);
     font-family: var(--font-vazir-regular);
-    margin: 1.5rem;
-    max-width: 31rem;
-}
-.courses__img
-{
-    width: 100%;
-    border-radius: 1.5rem;
-}
-.courses__content
-{
-    padding:1rem 2rem 2.5rem 2rem;
-}
-.courses__caption
-{
-    margin-bottom: 4.5rem;
-}
-.courses__caption h3
-{
-    font-size: 1.8rem;
-    font-weight: bolder;
-    color: var(--primary-color);
-    font-family:var(--font-vazir-medium) ;
-    margin-bottom: 1rem;
-    height: 5rem;
-}
-.courses__caption p
-{
-    color: var(--secondary-color);
     font-size: 1.6rem;
-    max-width: 28rem;
-    height: 5rem;
-    overflow: hidden;
-    /* white-space: nowrap; */
-    text-overflow: ellipsis;
 }
-.courses__master
+.course-price
 {
-    justify-content: space-between;
+    font-family: var(--font-vazir-regular);
 }
-.courses__master-name,.courses__score
-{
-    align-items: center;
-}
-.courses__master-name span
+.old-price
 {
     color: var(--tertiary-color);
-    font-size: 1.7rem;
-    margin-right: 0.3rem;
+    margin-bottom: -1rem;
 }
-.courses__score span
+.new-price 
 {
-    color: #F59E0B;
-    font-size: 2.3rem;
-    margin: 1.3rem 0 1rem 0;
-    font-weight: bolder;
-}
-.courses__buy-details
-{
-    margin-top: 2.5rem;
-    justify-content: space-between;
-}
-.courses__student-numbers
-{
-    align-items: center;
-}
-.courses__student-numbers span
-{
-    margin: 0.5rem 0.5rem 0 0;
-    color: var(--tertiary-color);
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.courses__price
-{
-    align-items: center;
-}
-.courses__price span
-{
-    color: var(--main-color);
     font-size: 2rem;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-.courses__price div
-{
+    text-align: center;
     color: var(--main-color);
-    font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-.toman-icon
-{
-    width: 3rem;
-}
-.courses__list
-{
-    margin-top: 4rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.course-notfind__title
-{
-    font-size: 2.5rem;
-    color: var(--secondary-color);
-    position: absolute;
-    bottom: -5rem;
     font-family: var(--font-vazir-bold);
+}
+.new-price span
+{
+    margin-right: .3rem;
+}
+.course-left-details
+{
+    align-items: center;
+    justify-content: space-between;
+    width: 18rem ;
+}
+.delete-icon
+{
+    fill:var(--secondary-color);
+    cursor: pointer;
 }
