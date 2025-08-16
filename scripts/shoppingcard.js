@@ -2,7 +2,7 @@ import {changeMode , modeHandler , navBar , pageModeIcon , lightIcon , mobilePag
 const menuToggleBtn = document.querySelector(".hamburger-menu")
 const mobileCategoryItem = document.querySelectorAll(".mobile-category__item")
 const shoppingCardProductList = document.querySelector(".shoppingcard-product__list")
-
+const allPriceLable = document.querySelector(".allPrice")
 menuToggleBtn.addEventListener("click" , function()
 {
     menuToggleBtn.classList.toggle("hamburger-menu--toggle")
@@ -46,17 +46,21 @@ window.addEventListener("load" , e =>
     )
 }
 )
+let productData;
+
 function getBasketProductData() 
 {
   let lx = db.transaction("info" , "readonly")
   let request = lx.objectStore("info")
-  let productData = request.getAll()
+  productData = request.getAll()
   productData.addEventListener("success" , e =>
-  {
-    shoppingCardProductList.innerHTML = ""
-    basketCourseHandler(productData)
-  }
-)
+    {
+      shoppingCardProductList.innerHTML = ""
+      basketCourseHandler(productData)
+      sumAllPrice(productData);
+      sumAllOldPrice(productData)
+    }
+  )
 
 }
 
@@ -91,11 +95,58 @@ function deleteBasketProductData(e )
       productData.addEventListener("success" , e =>
       {
         getBasketProductData()
+        location.reload()
       }
       )
   }
 }
-
-let regex = /ali/
-
-console.log(regex.test("ali hamidi"));
+let courseAlloldPrice;
+let courseAllNewPrice;
+let sumPersian;
+function sumAllOldPrice(productData)
+{
+  courseAlloldPrice = productData.result.map(item =>
+  {
+    return item.oldPrice + ''
+  }
+  )
+  console.log(courseAllNewPrice);
+  
+}
+function sumAllPrice(allProduct)
+{
+  
+  let items = allProduct.result
+  courseAllNewPrice = items.map(item => 
+  {
+    return item.newPrice + ''
+  })
+}
+setTimeout(() => {
+function persianToEnglishNumber(str) {
+  return str.replace(/[\u06F0-\u06F9]/g, d =>
+      String.fromCharCode(d.charCodeAt(0) - 1728)
+  );
+}
+function englishToPersianNumber(num) {
+  return num.toString().replace(/[0-9]/g, d =>
+      String.fromCharCode(d.charCodeAt(0) + 1728)
+  )
+}
+let noCommasPrice = courseAllNewPrice.map(item => {
+  
+  return item.replace(/,/g, "");
+})
+let sum = noCommasPrice.reduce((total, price) => {
+  let englishNum = persianToEnglishNumber(price);
+  return total + Number(englishNum);
+}, 0);
+sumPersian = englishToPersianNumber(sum);
+// تبدیل ارقام فارسی به انگلیسی
+let englishNumber = sumPersian.replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
+// تبدیل رشته به عدد
+let number = parseInt(englishNumber, 10);
+// دوباره فرمت فارسی با جداکننده
+let finallyNewPrice = number.toLocaleString('fa-IR');
+allPriceLable.innerHTML = finallyNewPrice
+}, 700);

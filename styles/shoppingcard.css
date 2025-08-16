@@ -123,6 +123,11 @@
 {
     margin-top: 0.75rem;
 }
+.shoppingcard-product
+{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
 .shoppingcard-product__title
 {
     font-family: var(--font-vazir-black);
@@ -130,7 +135,6 @@
     color: var(--white-color);
     background-color: var(--main-color);
     padding: 2rem;
-    border-radius: 1.5rem 1.5rem 0 0;
     font-size: 2rem;
 }
 .shoppingcard-product__title h2
@@ -145,6 +149,10 @@
     border-top: .1rem solid var(--primary-color);
     align-items: center;
     justify-content: space-between;
+}
+.shoppingcard-product__list-item:first-child
+{
+    border: none;
 }
 .course-img
 {
@@ -196,4 +204,39 @@
 {
     fill:var(--secondary-color);
     cursor: pointer;
+}
+.payment__title
+{
+    border-radius: 1.5rem;
+
+}
+.payment__title
+{
+    background-color: var(--main-color);
+    align-items: center;
+    padding: 2rem ;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-family: var(--font-vazir-black);
+}
+.payment__title h2
+{
+    margin: 0.5rem 1rem 0 0;
+}
+.payment-details
+{
+    padding: 2.5rem;
+    font-size: 2rem;
+    font-family: var(--font-vazir-medium);
+    background-color: var(--section-bg);
+}
+.payment-details__price,.payment-details__discount
+{
+    color: var(--secondary-color);
+    justify-content: space-between;
+}
+.payment-details__discount
+{
+    color: red;
+    margin-top: 1.5rem;
 }
