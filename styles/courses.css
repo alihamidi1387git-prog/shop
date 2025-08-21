@@ -100,6 +100,10 @@
 {
     display: none;
 }
+.dark-mode .mobile-category__submenu a
+{
+    color: var(--white-color);
+}
 /* COURSE DETAILS */
 .course-details
 {
@@ -178,11 +182,13 @@
     overflow: hidden;
     position: relative;
     height: auto;
+    padding-bottom: .5rem;
   }
   .controls {
     display: flex;
     align-items: center;
     padding: 1rem;
+    height: 4rem;
     margin-top: -5rem;
     background: rgba(0, 0, 0, 0.7);
   }
@@ -250,7 +256,7 @@
 }
 .mobile-category__submenu
 {
-    background-color: #F5F5F5;
+    background-color: var(--app-bg);
     font-size: 1.25rem;
     color: var(--secondary-color);
     font-family: var(--font-vazir-regular);

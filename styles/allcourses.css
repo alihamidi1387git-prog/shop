@@ -104,7 +104,7 @@
 }
 .mobile-category__submenu
 {
-    background-color: #F5F5F5;
+    background-color: var(--app-bg);
     font-size: 1.25rem;
     color: var(--secondary-color);
     font-family: var(--font-vazir-regular);
@@ -122,6 +122,10 @@
 .mobile-category__submenu-item
 {
     margin-top: 0.75rem;
+}
+.dark-mode .mobile-category__submenu a
+{
+    color: var(--white-color) !;
 }
 /* COURSES */
 .courses
@@ -225,6 +229,10 @@
 .courses__student-numbers
 {
     align-items: center;
+}
+.dark-mode .courses__student-numbers path   
+{
+    stroke: #eee;
 }
 .courses__student-numbers span
 {

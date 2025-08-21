@@ -2,12 +2,7 @@
  <!-- 💕 Thanks For Merciful God 💕 -->
   <!-- 💕 كل ما أملكه يأتي من الله 💕 --> */
 
-@media (max-width:1900px) {
-    .nav {
-        max-width: 185rem !important;
-        margin:2rem auto !important;
-    }
-}
+
 @media (max-width:1400px) {
     .container 
     {
@@ -21,6 +16,10 @@
     .message-arrow
     {
         display: none;
+    }
+    .comments 
+    {
+        margin: -4rem 0 15rem 0 ;
     }
     
 }
@@ -163,6 +162,15 @@
     {
         max-width: 31rem;
     }
+    .comments-swiper-slide
+    {
+        width: 35rem !important;
+        padding: 5rem;
+    }
+    .comments-swiper-slide p
+    {
+        font-size: 1.8rem;
+    }
 }
 @media (max-width:768px) {
 
@@ -301,6 +309,49 @@
         display: none;
     }
     .discount-courses__title
+    {
+        font-size: 3rem;
+    }
+    .course-left-details
+    {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .shoppingcard-product__list-item
+    {
+        flex-direction: column;
+    }
+    .course-img__continer
+    {
+        width: 100%;
+    }
+    .cardslider-swiper
+    {
+        margin-left: 22rem;
+    }
+    .comments-swiper-slide
+    {
+        width: 23rem !important;
+        padding: 2.5rem;
+    }
+    .comments-swiper-slide p
+    {
+        font-size: 1.5rem;
+    }
+    .comments
+    {
+        margin: -2 0 12rem 0;
+    }
+    .message-writer-details h3 ,.message-writer-details span
+    {
+        font-size: 1.4rem;
+    }
+    .message-writer-img
+    {
+        width: 5rem;
+        height: 5rem;
+    }
+    .comments-title__container h2
     {
         font-size: 3rem;
     }
@@ -475,6 +526,48 @@
     {
         margin-left: 3rem;
     }
+    .course-img__continer
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main
+    {
+        margin-top: 10rem !important;
+    }
+    .comments-title__container h2 ,.articles__title h2
+    {
+        font-size: 2.5rem;
+    }
+
+    .cardslider-swiper
+    {
+        margin-left: 27rem;
+    }
+    .comments-swiper-slide
+    {
+        width: 18rem !important;
+        padding: 2.5rem;
+    }
+    .comments-swiper-slide p
+    {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .comments
+    {
+        margin: -2 0 12rem 0;
+    }
+    .message-writer-details h3 ,.message-writer-details span
+    {
+        font-size: 1.3rem;
+    }
+    .message-writer-img
+    {
+        width: 4rem;
+        height: 4rem;
+        align-self: center;
+    }
 }
 @media (max-width:490px) {
     .container 
@@ -483,7 +576,8 @@
     }
     #typing-text
     {
-        font-size: 1.7rem;
+        font-size: 2.3rem;
+        line-height: 1.2;
     }
     .header-content__caption
     {
@@ -634,7 +728,6 @@
         width: 5rem;
         height: 5rem;
     }
-    
     .course-content__title,.category-number
     {
         font-size: 1.5rem !important;
@@ -704,5 +797,93 @@
     {
         width: 4rem !important;
         height: 4rem !important;
+    }
+    .course-img__continer
+    {
+        text-align: center;
+    }
+    .course-img
+    {
+        width: 22rem;
+    }
+    .slider-btn
+    {
+        display: none;
+    }
+    .payment-details
+    {
+        font-size: 1.5rem;
+    }
+    .accept-rules h3
+    {
+        font-size: 1.2rem;
+    }
+    .accept-rules p
+    {
+        font-size: 1rem;
+    }
+    .social-address
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .relation-port
+    {
+        justify-content: center;
+    }
+    .copy-right
+    {
+        font-size: 1.6rem;
+    }
+    .category-contaner
+    {
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    .famous-courses__category
+    {
+        font-size: 1.7rem;
+        width: 71rem;
+    }
+    .comments-title__container h2
+    {
+        font-size: 2rem;
+    }
+    .comments-title__container svg
+    {
+        height: 6rem;
+        width: 6rem;
+    }
+    .comments-title p
+    {
+        font-size: 1.4rem;
+    }
+
+    .cardslider-swiper
+    {
+        margin-left: 30rem;
+    }
+    .comments-swiper-slide
+    {
+        width: 16rem !important;
+        padding:.5rem 3rem;
+    }
+    .comments-swiper-slide p
+    {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+    .comments
+    {
+        margin: -10rem 0 7rem 0;
+    }
+    .message-writer-details h3 ,.message-writer-details span
+    {
+        font-size: 1.2rem;
+    }
+    .message-writer-img
+    {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }

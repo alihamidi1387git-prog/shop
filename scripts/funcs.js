@@ -35,17 +35,6 @@ function modeHandler()
         mobilePageModeIcon.innerHTML = mobileLightIcon + "<p>مود روشن</p>"
     }
 }
-function navBarScrolledStyles ()
-{
-    if(window.scrollY > 100)
-        {
-            navBar.style.cssText = "margin:2rem ; max-width: 190rem;border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.3);   box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.1),inset 0 0.1rem 0 rgba(255, 255, 255, 0.5),inset 0 -0.1rem 0 rgba(255, 255, 255, 0.1),inset 0 0 0.2rem 0.1rem rgba(255, 255, 255, 1);"
-        }
-        else
-        {
-            navBar.style.cssText = ""
-        }    
-}
 
 
-export {changeMode , modeHandler , navBarScrolledStyles , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon }
+export {changeMode , modeHandler  , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon }

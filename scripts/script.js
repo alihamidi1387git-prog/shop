@@ -1,7 +1,7 @@
 // /* <!-- 💕 به نام خداند روزی ده رهنمای 💕 -->
 // <!-- 💕 Thanks For Merciful God 💕 -->
 // <!-- 💕 كل ما أملكه يأتي من الله 💕 --> */
-import {changeMode , modeHandler , navBarScrolledStyles , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon} from "./funcs.js"
+import {changeMode , modeHandler , navBar , pageModeIcon , lightIcon , mobilePageModeIcon ,mobileLightIcon ,darkIcon ,mobileDrkIcon} from "./funcs.js"
 const loaderContainer = document.querySelector(".loader-container")
 const body = document.body
 const menuToggleBtn = document.querySelector(".hamburger-menu")
@@ -46,12 +46,23 @@ const swiper = new Swiper('.swiper', {
       },
   });
 let Swiper2 = new Swiper(".message-mySwiper", {
-    effect: "cards",
+    effect:'cards',
     grabCursor: true,
     autoplay: {
         delay: 2500,
          disableOnInteraction: false,
       },
+      allowTouchMove: false,
+      on: {
+        slideChange: function () {
+          let current = this.activeIndex;
+          let total = this.slides.length;
+
+          if (current === total - 2) {
+            this.slideTo(0);
+          }
+        }
+      }
 });
 let swiper3 = new Swiper(".mySwiper", {
     freeMode:true,
@@ -76,13 +87,11 @@ let swiper3 = new Swiper(".mySwiper", {
 pageModeIcon.addEventListener("click" , changeMode)
 mobilePageModeIcon.addEventListener("click" , changeMode)
 window.addEventListener("load" , modeHandler)
-window.addEventListener("scroll" , navBarScrolledStyles)
-
+//
 mobileCategoryItem.forEach(item =>
     {
         item.addEventListener("click" , (e) =>
             {
-                body.innerHTML = ''
                 item.classList.toggle("mobile-category__item--active")
             })
     }

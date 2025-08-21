@@ -80,6 +80,7 @@
 .article-road
 {
     background-color: var(--section-bg);
+    overflow: scroll;
 }
 /* ARTICLE ROAD  */
 .main
@@ -103,6 +104,10 @@
 {
     position: relative;
     padding-left: 0.5rem;
+}
+.article-road__course-name
+{
+    min-width: max-content;
 }
 .home-icon svg path
 {
@@ -182,6 +187,10 @@
     border: .1rem solid var(--primary-color);
     padding: 2.5rem;
     border-radius: 1.5rem 1.5rem 0 0;
+}
+.dark-mode .article-category__title path
+{
+    fill:var(--white-color)
 }
 .article-category__title-content
 {

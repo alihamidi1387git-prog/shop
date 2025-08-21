@@ -42,7 +42,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/header-bg2.jpg');
-    max-width: 190rem;
+    max-width: 250rem;
     margin:0 auto ;
     height:auto;
     padding-bottom: 5rem;
@@ -55,7 +55,7 @@ body
 /* NAV BAR */
 .nav {
     color: var(--white-color);
-    max-width: 190rem;
+    max-width: 250rem;
     align-items: center;
     font-size: 2.3rem;
     position: fixed;
@@ -66,7 +66,7 @@ body
     font-family: var(--font-vazir-medium);
     padding: 5rem 15rem;
     background: rgba(0, 0, 0 , .3);
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(2rem);
     overflow: hidden;
     justify-content: space-between;
@@ -80,12 +80,7 @@ body
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.8),
-      transparent
-    );
+
   }
   
 .nav::after {
@@ -95,12 +90,7 @@ body
     left: 0;
     width: 1px;
     height: 100%;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.8),
-      transparent,
-      rgba(255, 255, 255, 0.3)
-    );
+
 }
 .nav-links div
 {
@@ -246,12 +236,12 @@ body
 .hamburger-menu-line::after
 {
   position: absolute;
-  top: -0.9rem;
+  top: -1rem;
 }
 .hamburger-menu-line::before
 {
   position: absolute;
-  top: 0.9rem;
+  top: 1rem;
 }
 .hamburger-menu--toggle
 {
@@ -297,9 +287,22 @@ body
 {
     margin: 2rem 0;
 }
-.mobile-fast-links__item
+.mobile-fast-links__item 
 {
     margin: 2rem 0 ;
+}
+.mobile-category__item p 
+{
+    color: var(--secondary-color);
+}
+.mobile-category__item rect
+{
+    fill: transparent;
+    color: var(--primary-color);
+}
+.mobile-category__item path
+{
+    stroke:var(--primary-color)
 }
 .mobile-category__item--active
 {
@@ -329,14 +332,18 @@ body
 }
 .mobile-category__submenu
 {
-    background-color: #F5F5F5;
+    background-color: var(--app-bg);
     font-size: 1.25rem;
-    color: var(--secondary-color);
+    color: rgb(55 65 81 / 1);;
     font-family: var(--font-vazir-regular);
     filter: blur(2px);
     transition: all .3s ease;
     height: 0;
     overflow: hidden;
+}
+.dark-mode .mobile-category__submenu a
+{
+    color: var(--white-color);
 }
 .mobile-category__item--active .mobile-category__submenu
 {
@@ -351,10 +358,15 @@ body
 .mobile-page-mode
 {
     align-items: center;
+    color: var(--primary-color);
 }
 .mobile-page-mode p
 {
     margin-right:1rem;
+}
+.dark-mode .mobile-page-mode path
+{
+    fill : white
 }
 /* MIAN SECTION */
 .main
@@ -439,7 +451,7 @@ body
     font-weight: bolder;
     color: var(--primary-color);
     font-family:var(--font-vazir-medium) ;
-    margin-bottom: 1rem;
+    margin:.5rem 0 1rem 0 ;
     height: 5.2rem;
     overflow: hidden;
     display: -webkit-box;
@@ -462,6 +474,10 @@ body
 .famous-courses__master,.discount-courses__master
 {
     justify-content: space-between;
+}
+.discount-courses__master
+{
+    margin-top: -1rem;
 }
 .famous-courses__master-name,.discount-courses__master-name,.discount-courses__score,.famous-courses__score
 {
@@ -1051,17 +1067,17 @@ body
 /* COMMENTS SLDER */
 .comments
 {
-    margin:5rem 0 10rem 0;
+    margin:0rem 0 12rem 0;
 }
 .comments-content
 {
     justify-content: space-between;
 }
 .cardslider-swiper {
-    width: 53rem;
+    width: 45rem;
     height: 28rem;
     direction: ltr;
-    margin: 3rem 6.5rem 0 0;    
+    margin: 3rem 6.5rem 0 9rem;    
 }
 .comments-swiper-slide {
     border-radius: 1.8rem;
@@ -1074,6 +1090,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 20rem;   
 }
 .comments-swiper-slide p 
 {
@@ -1143,7 +1160,7 @@ body
 {
     background-color: var(--section-bg);
     padding: 5rem 2.5rem;
-    max-width: 190rem;
+    max-width: 250rem;
     margin: auto;
 }
 .relation-port

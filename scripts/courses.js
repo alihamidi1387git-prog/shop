@@ -254,7 +254,6 @@ mobileCategorySubmenuItem.forEach(item => {
   })
 })
 let db = null
-console.log(deciredCourse);
 
 addToBasketCardBtn.addEventListener("click" , e =>
 {
